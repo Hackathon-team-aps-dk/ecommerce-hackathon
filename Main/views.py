@@ -6,10 +6,10 @@ from . forms import CreateNewList
 # Create your views here.
 def index(response , id):
     listName = ToDoList.objects.get(id=id)
-    return render(response , 'Main/base.html' , {"name":listName})
+    return render(response , 'main/base.html' , {"name":listName})
 
 def home(response):
-    return render(response , 'Main/home.html' , {"name":"test"})
+    return render(response , 'main/home.html' , {"name":"test"})
 
 def create(response):
     if response.method == "POST":
@@ -20,7 +20,7 @@ def create(response):
             
     else:
         form = CreateNewList()
-    return render(response , 'Main/test.html' , {"form": form})
+    return render(response , 'main/test.html' , {"form": form})
 
 def start(response):
     return render(response , 'main/start.html')
