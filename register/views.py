@@ -10,4 +10,4 @@ def register(response):
             return redirect('/home')
     else:
         form = RegisterForm()
-    return render(response , 'register/register.html' , {"form" : form})
+    return render(response , 'main/register.html' , {"form" : form})
