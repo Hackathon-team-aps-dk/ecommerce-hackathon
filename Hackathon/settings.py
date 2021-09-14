@@ -133,3 +133,5 @@ CRISPY_TEMPLATE_PACK="bootstrap4"
 LOGIN_REDIRECT_URL = "/home"
 
 DEBUG = False
+
+ALLOWED_HOSTS = ['127.0.0.1' , 'apsdk-hackathon.herokuapp.com']
