@@ -22,7 +22,4 @@ urlpatterns = [
     path('register/' , v.register , name = "register"),
     path('', include("Main.urls")),
     path('' , include("django.contrib.auth.urls")),
-
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
