@@ -10,7 +10,4 @@ def register(response):
             return redirect('/home')
     else:
         form = RegisterForm()
-    try:
-        return render(response , 'register/register.html' , {"form" : form})
-    except:
-        return render(response , 'main/home.html' , {"name":"test"})
+    return render(response , 'register/register.html' , {"form" : form})
