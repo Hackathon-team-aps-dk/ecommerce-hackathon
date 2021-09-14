@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_en!iecm_@vlc4e3@3x!ptjitm7f54j7(!e05rqaaq_y#scs%5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0' , 'apsdk-hackathon.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1' , 'apsdk-hackathon.herokuapp.com']
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Hackathon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Main/templates/base.html'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
