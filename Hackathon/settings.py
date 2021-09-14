@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_en!iecm_@vlc4e3@3x!ptjitm7f54j7(!e05rqaaq_y#scs%5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0' , 'apsdk-hackathon.herokuapp.com']
 
