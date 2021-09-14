@@ -23,4 +23,4 @@ def create(response):
     return render(response , 'Main/test.html' , {"form": form})
 
 def start(response):
-    return render(response , 'Main/start.html')
+    return render(response , 'main/start.html')
