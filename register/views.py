@@ -9,8 +9,8 @@ def register(response):
             form.save()
             return redirect('/home')
     else:
-        form = RegisterForm(response.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/home')
-    return render(response , '/home' , {"form" : form})
+        form = RegisterForm()
+    try:
+        return render(response , 'register/register.html' , {"form" : form})
+    except:
+        return render(response , 'main/home.html' , {"name":"test"})
