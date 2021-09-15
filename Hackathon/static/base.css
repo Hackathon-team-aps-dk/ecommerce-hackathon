@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Cormorant';
-    background-image: url("./background.png");
+    background-image: url("./mainbg.jpg");
     background-size:cover;
 }
 
@@ -57,11 +57,12 @@ body{
 }
 
 h1{
-    color: rgb(71, 26, 116);
+    color: coral;
     position: absolute;
     left: 25%;
     top: 12%;
     font-size: 400%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .register-form{
