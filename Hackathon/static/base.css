@@ -10,6 +10,10 @@ body{
     background-image: url("./seagreenbg.png");
 }
 
+.login{
+    background-image: url("./seagreenbg.png");
+}
+
 .register-link{
     border: 3px solid orange;
     background-color: white;
@@ -122,4 +126,70 @@ ul{
 
 #id_Retailer{
     margin-top: 20px;
+}
+
+.login-form{
+    display: inline-block;
+    background-color: white;
+    overflow-y: auto;
+    text-align: left;
+    position: absolute;
+    left: 23%;
+    height: 60%;
+    width: 50%;
+    margin: 25px;
+    border-radius: 30px;
+    top: 12%;
+    word-wrap: break-word;
+    padding: 20px;
+}
+
+.login-form button{
+    color: white;
+    background-color: rgb(83, 179, 125);
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: 8%;
+    font-size: 125%;
+    bottom: 10%;
+    font-family: 'Cormorant';
+}
+
+.login-form input{
+    position: absolute;
+    height: 4%;
+    width: 50%;
+    left: 40%;
+    margin-top: -20px;
+}
+
+.login-title{
+    position: absolute;
+    color: rgb(83, 179, 125);
+    left: 25%;
+    font-size: 30px;
+}
+
+.invalid-feedback{
+    display: inline-block;
+    top: 50%;
+    color: red;
+}
+
+.login-form a{
+    text-decoration: none;
+    color: rgb(83, 179, 125);
+}
+
+.alert-block{
+    position: absolute;
+    color: red;
+    top: 60%;
+}
+
+.alert-block ul{
+    list-style-type: none;
 }

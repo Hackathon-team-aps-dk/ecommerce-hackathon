@@ -1,11 +1,24 @@
-{% extends 'main/base.html' %}
-
-{% block content%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body class="login">
 {% load crispy_forms_tags %}
+<div class="login-form">
 <form method="POST" class="form-group">
+    <label class="login-title">Log In Into An Account</label> 
+    <br><br><br>
     {% csrf_token %}
-    {{ form|crispy}}
+    {{ form|crispy|linebreaks}}
     <button type="submit" class="login-btn">Login</button>
-    <p>Don't Have An Account? Create One <a href="/register">Here!</a></p>
+    <p>Don't Have An Account? Create One <a href="/register">Here</a></p>
 </form>
-{% endblock %}
+</div>
+<link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+</body>
+</html>
