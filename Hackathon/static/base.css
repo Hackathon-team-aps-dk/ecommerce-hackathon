@@ -6,6 +6,10 @@ body{
     background-size:cover;
 }
 
+.registaration{
+    background-image: url("./seagreenbg.png");
+}
+
 .register-link{
     border: 3px solid orange;
     background-color: white;
@@ -20,6 +24,7 @@ body{
     text-decoration: none;
     color: lightcoral;
     font-size: 150%;
+    font-family: 'Cormorant';
 }
 
 .login-link{
@@ -36,6 +41,7 @@ body{
     text-decoration: none;
     color: lightcoral;
     font-size: 150%;
+    font-family: 'Cormorant';
 }
 
 .register-link:hover{
@@ -52,4 +58,68 @@ h1{
     left: 25%;
     top: 12%;
     font-size: 400%;
+}
+
+.register-form{
+    display: inline-block;
+    background-color: white;
+    overflow-y: auto;
+    text-align: left;
+    position: absolute;
+    left: 23%;
+    height: 80%;
+    width: 50%;
+    margin: 25px;
+    border-radius: 30px;
+    top: 12%;
+    word-wrap: break-word;
+    padding: 20px;
+}
+
+.register-form button{
+    color: white;
+    background-color: rgb(83, 179, 125);
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: 8%;
+    font-size: 125%;
+    bottom: 10%;
+    font-family: 'Cormorant';
+}
+
+.register-form input{
+    position: absolute;
+    height: 4%;
+    width: 50%;
+    left: 40%;
+    margin-top: -20px;
+}
+
+ul{
+    text-decoration: none;
+}
+
+.register-title{
+    position: absolute;
+    color: rgb(83, 179, 125);
+    left: 25%;
+    font-size: 30px;
+}
+
+.invalid-feedback{
+    display: inline-block;
+    top: 50%;
+    color: red;
+}
+
+.register-form a{
+    text-decoration: none;
+    color: rgb(83, 179, 125);
+}
+
+#id_Retailer{
+    margin-top: 20px;
 }

@@ -1,13 +1,18 @@
 from django.shortcuts import render , redirect
 from django.contrib.auth import login , authenticate
-from . forms import RegisterForm
+from . forms import RegisterForm , UserProfileForm
 # Create your views here.
 def register(response):
     if response.method == "POST":
         form = RegisterForm(response.POST)
-        if form.is_valid():
-            form.save()
+        profileForm = UserProfileForm(response.POST)
+        if form.is_valid() and profileForm.is_valid():
+            user = form.save()
+            profile = profileForm.save(commit = False)
+            profile.user = user
+            profile.save()
             return redirect('/home')
     else:
         form = RegisterForm()
-    return render(response , 'main/register.html' , {"form" : form})
+        profileForm = UserProfileForm()
+    return render(response , 'main/register.html' , {"form" : form , "profileForm" : profileForm})

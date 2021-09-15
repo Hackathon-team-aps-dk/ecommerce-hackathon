@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {%block title%} <title>Hackathon</title>{%endblock%}
 </head>
+{%block body%}
 <body>
 
     <div>
@@ -25,9 +26,11 @@
             {% block content %}
                 Base Template For Website
             {% endblock %}
-    </div>
+    </div>         
 
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
     <script src="{% static 'events.js' %}"></script>
+
 </body>
+{%endblock%}
 </html>
