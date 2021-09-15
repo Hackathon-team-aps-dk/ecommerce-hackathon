@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
+
+body{
+    font-family: 'Cormorant';
+    background-image: url("./bg.jpg");
+    background-size:cover;
+}
+
+.register-link{
+    border: 3px solid orange;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    height: 10%;
+    width: 25%;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: lightcoral;
+    font-size: 150%;
+}
+
+.login-link{
+    border: 3px solid orange;
+    background-color: white;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    height: 10%;
+    width: 25%;
+}
+
+.login-link a{
+    text-decoration: none;
+    color: lightcoral;
+    font-size: 150%;
+}
+
+.register-link:hover{
+    background-color: gold;
+}
+
+.login-link:hover{
+    background-color: gold;
+}
+
+h1{
+    color: rgb(117, 42, 170);
+    position: absolute;
+    left: 25%;
+    top: 12%;
+    font-size: 400%;
+}
