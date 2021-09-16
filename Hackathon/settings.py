@@ -32,13 +32,13 @@ ALLOWED_HOSTS = ['127.0.0.1' , 'apsdk-hackathon.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'Main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Main.apps.MainConfig',
     'register.apps.RegisterConfig',
     'crispy_forms'
 ]
@@ -134,3 +134,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK="bootstrap4"
 
 LOGIN_REDIRECT_URL = "/home"
+
+LOGOUT_REDIRECT_URL = "/login"

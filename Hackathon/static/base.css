@@ -14,6 +14,10 @@ body{
     background-image: url("./seagreenbg.png");
 }
 
+.home{
+    background-image: none;
+}
+
 .register-link{
     border: 3px solid saddlebrown;
     background-color: white;
@@ -169,7 +173,7 @@ ul{
 
 .login-title{
     position: absolute;
-    color: rgb(83, 179, 125);
+    color: rgb(189, 246, 54);
     left: 25%;
     font-size: 30px;
 }
@@ -193,4 +197,39 @@ ul{
 
 .alert-block ul{
     list-style-type: none;
+}
+
+#navbar{
+    display: inline;
+}
+#navbar *{
+    display:inherit;
+}
+#navbar ul{
+    list-style-type: none;
+    background-color: #0ceba1;
+    padding: 1.5%;
+    display:inline-block;
+    width: 110%;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+#navbar li{
+    margin:0;
+    padding: 0 5%;
+    }
+#navbar a{
+    font-size: 150%;
+    text-decoration: none;
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+
+#hint_id_new_password1{
+    display: none;
+}
+
+.text-muted{
+    display:none;
 }

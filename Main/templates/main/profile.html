@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>User Profile</title>
 </head>
 <body class="home">
 {%if user.is_authenticated%}
@@ -16,7 +16,7 @@
             <a href="/home">Home</a>
         </li>
         <li>
-            <a href="/profile">Profile</a>
+            <a href="">Profile</a>
         </li>
         <li>
             <a href="">Products</a>
@@ -34,6 +34,16 @@
         </li>
     </ul>
 </div>
+
+<ul>
+    {%if retail == True%}
+    <li>Account Type: Retailer</li>
+    {%else%}
+    <li>Account Type: Customer</li>
+    {%endif%}
+    <li>Username: {{username}}</li>
+    <li>Registered Email: {{email}}</li>
+</ul>
 
 {%else%}
 

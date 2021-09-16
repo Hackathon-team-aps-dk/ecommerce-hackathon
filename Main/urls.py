@@ -1,9 +1,17 @@
 from django.urls import path
 from . import views
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path("<int:id>" , views.index , name = "index"),
    path("home/" , views.home , name = 'home'),
-   path("create/" , views.create , name = 'create'),
-   path("" , views.start , name = 'start')
+   path("" , views.start , name = 'start'),
+   path("profile/" , views.profile  , name = 'profile'),
+   path(
+        'change-password/',
+        auth_views.PasswordChangeView.as_view(
+            template_name='main/change-password.html',
+            success_url = '/profile'
+        ),
+        name='change_password'
+    ),
 ]
