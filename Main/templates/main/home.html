@@ -1,4 +1,5 @@
 {% load static %}
+{% load custom_filters %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,11 +33,46 @@
     </ul>
 </div>
 
+<form action="{% url 'query' %}" method="GET">
+<input type="text" placeholder=" Search For Products...." class="search-bar" name="search">
+<button class="query-btn">🔍</button>
+</form>
+
 {%else%}
 
 <h1>Please Login <a href="/login">Here</a> To Get Access To The Website</h1>
 
 {%endif%}
+
+
+
+{% if products|length >= 1%}
+
+{%  for dict in products  %}
+
+<div>
+    <ul>
+        <li>
+            Product ID: {{dict.id}}
+        </li>
+        <li>
+            Product Name: {{dict.productName}}
+        </li>
+        <li>
+            Description: {{dict.productDescription}}
+        </li>
+        <li>
+            Product Cost: ₹{{dict.productCost}}
+        </li>
+        <li>
+            Sold By: {{dict.poster_id|idToUser}}
+        </li>
+    </ul>
+</div>
+{%endfor%}
+
+{% endif %}
+
 <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 </body>
 </html>

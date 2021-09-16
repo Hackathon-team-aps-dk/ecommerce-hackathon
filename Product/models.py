@@ -10,4 +10,4 @@ class Product(models.Model):
     poster = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE , null =True)
 
     def __str__(self):
-        return self.productName
+        return self.productName 

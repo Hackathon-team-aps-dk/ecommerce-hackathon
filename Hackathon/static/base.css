@@ -225,7 +225,7 @@ ul{
 }
 #navbar li{
     margin:0;
-    padding: 0 5%;
+    padding: 0 4%;
     }
 #navbar a{
     font-size: 150%;
@@ -313,4 +313,24 @@ ul{
 
 #product-desc{
    padding: 8px 2px;
+}
+
+.search-bar{
+    border: 2px solid coral;
+    height: 50px;
+    width: 90%;
+    background-color: rgb(253, 202, 202);
+    font-size: 20px;
+    outline: none;
+    font-family: 'Cormorant';
+  }
+
+.query-btn{
+    position: absolute;
+    height: 56px;
+    border: none;
+    border: 2px solid coral;
+    width: 5%;
+    left: 90%;
+    background-color: rgb(255, 136, 115);
 }
