@@ -18,6 +18,10 @@ body{
     background-image: none;
 }
 
+.profile{
+    background-image: none;
+}
+
 .register-link{
     border: 3px solid saddlebrown;
     background-color: white;
@@ -109,6 +113,7 @@ h1{
 
 ul{
     text-decoration: none;
+    list-style-type: none;
 }
 
 .register-title{
@@ -232,4 +237,26 @@ ul{
 
 .text-muted{
     display:none;
+}
+
+.stats{
+    text-align: center;
+    position: absolute;
+    left: 25%;
+}
+
+.stats li{
+    padding: 7% 0%;
+    font-size: 150%;
+    color: #152336;
+}
+
+#passChangeBtn{
+    border: none;
+    background-color: #0ceba1;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: larger;
+    font-family: 'Cormorant';
 }

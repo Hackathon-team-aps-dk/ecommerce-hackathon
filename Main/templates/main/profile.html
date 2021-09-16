@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
 </head>
-<body class="home">
+<body class="profile">
 {%if user.is_authenticated%}
 
 <div id="navbar">
@@ -35,7 +35,7 @@
     </ul>
 </div>
 
-<ul>
+<ul class='stats'>
     {%if retail == True%}
     <li>Account Type: Retailer</li>
     {%else%}
@@ -43,6 +43,7 @@
     {%endif%}
     <li>Username: {{username}}</li>
     <li>Registered Email: {{email}}</li>
+    <li><Button id="passChangeBtn" onclick="location.href = '/change-password/'">Change Password</Button></li>
 </ul>
 
 {%else%}
