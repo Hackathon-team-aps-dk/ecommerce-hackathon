@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['127.0.0.1' , 'apsdk-hackathon.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'Product.apps.ProductConfig',
     'Main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
