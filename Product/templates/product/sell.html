@@ -34,7 +34,7 @@
 
     <div class="product-form">
     <form method="POST">
-        <label class="productLabel">Create A Product</label> 
+        <label class="product-title">Create A Product</label> 
         <br><br><br>
         {% csrf_token %}
         {{ form|crispy|linebreaks }}

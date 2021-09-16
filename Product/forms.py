@@ -6,6 +6,10 @@ class CreateNewProduct(forms.ModelForm):
     productDescription = forms.CharField(max_length = 550 , label='Description')
     productCost = forms.IntegerField(label='Cost in ₹')
 
+    def __init__(self, *args, **kwargs):
+        super(CreateNewProduct, self).__init__(*args, **kwargs)
+        self.fields['productDescription'].widget.attrs['id'] = 'product-desc'
+
     class Meta:
         model = Product
         fields = ['productName','productDescription','productCost']
