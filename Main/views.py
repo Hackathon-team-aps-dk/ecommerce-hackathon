@@ -10,7 +10,7 @@ def home(response):
     retail =False
     if response.user.is_authenticated:
         username = response.user.username
-        users = list(Profile.objects.all())
+        users = list(Profile.objects.filter(Retailer = True))
         for user in users:
             if str(user) == str(username):
                 retail = True
@@ -26,7 +26,7 @@ def profile(response):
     retail =False
     if response.user.is_authenticated:
         username = response.user.username
-        users = list(Profile.objects.all())
+        users = list(Profile.objects.filter(Retailer = True))
         for user in users:
             if str(user) == str(username):
                 retail = True

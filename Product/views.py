@@ -17,7 +17,7 @@ def create(response):
     retail =False
     if response.user.is_authenticated:
         username = response.user.username
-        users = list(models.Profile.objects.all())
+        users = list(models.Profile.objects.filter(Retailer = True))
         for user in users:
             if str(user) == str(username):
                 retail = True
@@ -30,7 +30,7 @@ def query(response):
     retail =False
     if response.user.is_authenticated:
         username = response.user.username
-        users = list(models.Profile.objects.all())
+        users = list(models.Profile.objects.filter(Retailer = True))
         for user in users:
             if str(user) == str(username):
                 retail = True
