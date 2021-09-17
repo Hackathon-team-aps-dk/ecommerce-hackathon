@@ -40,3 +40,5 @@ def query(response):
         search = response.GET.get("search")
         products = list(Product.objects.filter(productName__icontains=f'{search}').values())
     return render(response , 'main/home.html' , {"retail":retail , 'products':products})
+
+    
