@@ -1,15 +1,14 @@
 {% load static %}
+{% load custom_filters %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create a product</title>
+    <title>Cart</title>
 </head>
-<body class="create">
-    {% load crispy_forms_tags %}
-    {%if retail == True%}
+<body class="cart">
     <div id="navbar">
         <ul>
             <li>
@@ -31,20 +30,22 @@
             </li>
         </ul>
     </div>
-
-    <div class="product-form">
-    <form method="POST">
-        <label class="product-title">Create A Product</label> 
-        <br><br><br>
-        {% csrf_token %}
-        {{ form|crispy|linebreaks }}
-        <br>
-        <button type="submit" class="product-btn">Create</button>
-    </form>
+{% if carts|length >= 1 %}
+    <div class="cart-item">
+        <ul>
+            {% for cart in carts %}
+            <li>
+                {{cart}}
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+{%else%}
+<div class="cart-item">
+    <p>There are no products in your cart</p>
 </div>
-    {%else%}
-    <h1>You need to have a registered account to make products</h1>
-    {%endif%}
+{% endif %}
+
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 </body>
 </html>

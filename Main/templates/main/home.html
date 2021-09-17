@@ -20,7 +20,7 @@
             <a href="/profile">Profile</a>
         </li>
         <li>
-            <a href="">Cart</a>
+            <a href="/cart">Cart</a>
         </li>
         {% if retail == True %}
         <li>
@@ -50,7 +50,7 @@
 
 {%  for dict in products  %}
 
-<div>
+<div class="search-item">
     <ul>
         <li>
             Product ID: {{dict.id}}
@@ -67,9 +67,18 @@
         <li>
             Sold By: {{dict.poster_id|idToUser}}
         </li>
+        <li>
+            <form action="{% url 'cart' %}" method="GET">
+                <button type="submit" name='mybtn2' value={{dict.id|idToProduct}} class="add2cart">Add To Cart</button>
+                </form>
+        </li>
     </ul>
 </div>
 {%endfor%}
+
+{% else %}
+
+<p>No avaliable products searched</p>
 
 {% endif %}
 

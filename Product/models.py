@@ -11,3 +11,10 @@ class Product(models.Model):
 
     def __str__(self):
         return self.productName 
+
+class Cart(models.Model):
+    user = models.ForeignKey(User , on_delete=models.CASCADE , related_name='cart' , null = True)
+    product = models.CharField(max_length = 100)
+
+    def __str__(self):
+        return self.product
