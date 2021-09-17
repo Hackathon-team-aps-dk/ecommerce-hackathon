@@ -378,3 +378,108 @@ ul{
     font-family: 'Cormorant';
     padding: 10px 0px;
 }
+
+@media only screen and (max-width: 500px){
+    h1{
+        text-align: center;
+        font-size: 300%;
+        position: absolute;
+        left: 0%;
+    }
+
+    body{
+        font-family: 'Cormorant';
+        background-image: url("./seagreenbg.png");
+        background-size:cover;
+    }
+
+    .register-link{
+        width: 90%;
+        left: 5%;
+    }
+
+    .login-link{
+        width: 90%;
+        left: 5%;
+    }
+
+    .register-form{
+        background-color: white;
+        text-align: left;
+        height: 80%;
+        width: 90%;
+        border-radius: 30px;
+        top: 12%;
+        position: relative;
+        left: -10%;
+    }
+
+    .register-title{
+        text-align: center;
+        left: 10%;
+    }
+
+    #div_id_password2 label{
+        font-size: 75%;
+    }
+
+    .login-form{
+        background-color: white;
+        text-align: left;
+        height: 300px;
+        width: 90%;
+        border-radius: 30px;
+        top: 40%;
+        position: relative;
+        left: -10%;
+    }
+
+    .login-title{
+        text-align: center;
+        left: 10%;
+    }
+
+    #navbar li{
+        padding: 1% 5%;
+        font-size: 80%;
+    }
+
+    #navbar ul{
+        width: 110%;
+    }
+
+    .query-btn{
+        position: absolute;
+        height: 35px;
+        border: none;
+        border: 2px solid coral;
+        width: 15%;
+        left: 75%;
+        background-color: rgb(255, 136, 115);
+    }
+
+    .stats{
+        text-align: left;
+        position: absolute;
+        left: -10%;
+        font-size: 70%;
+    }
+
+    #passChangeBtn{
+        font-size: 100%;
+        font-family: 'Cormorant';
+    }
+
+    .search-bar{
+        height: 30px;
+      }
+
+    .cart-item{
+        text-align: left;
+        font-size: 20px;
+      }
+
+      .search-item{
+          font-size: 100%;
+      }
+}
