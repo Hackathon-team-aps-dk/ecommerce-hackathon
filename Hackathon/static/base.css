@@ -367,7 +367,7 @@ ul{
     padding: 1% 0%;
 }
 
-.active {
+#active {
     height: 50px;
     background-color: coral;
 }
