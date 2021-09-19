@@ -41,6 +41,7 @@ def Webhook(response):
     if response.method == 'POST':
             repo = git.Repo('https://github.com/Hackathon-team-aps-dk/ecommerce-hackathon')
             origin = repo.remotes.origin
+            origin.pull()
             return HttpResponse('Success' , status = 200)
     else:
         return HttpResponse('Failed' , status=400)
