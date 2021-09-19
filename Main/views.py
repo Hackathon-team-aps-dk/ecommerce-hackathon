@@ -44,4 +44,4 @@ def Webhook(response):
             origin.pull()
             return HttpResponse('Success' , status = 200)
     else:
-        return HttpResponse('Failed' , status=400)
+        return HttpResponse(f'Failed {response}' , status=400)
