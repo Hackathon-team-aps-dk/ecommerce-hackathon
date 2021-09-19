@@ -21,6 +21,7 @@ def create(response):
         for user in users:
             if str(user) == str(username):
                 retail = True
+                break
             else:
                 retail = False
     return render (response , 'product/sell.html' , {'retail':retail , 'form':form})
@@ -34,6 +35,7 @@ def query(response):
         for user in users:
             if str(user) == str(username):
                 retail = True
+                break
             else:
                 retail = False
     if response.method == 'GET':
@@ -52,6 +54,7 @@ def cart(response):
         for user in users:
             if str(user) == str(username):
                 retail = True
+                break
             else:
                 retail = False
 

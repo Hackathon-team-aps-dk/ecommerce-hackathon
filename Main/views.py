@@ -14,6 +14,7 @@ def home(response):
         for user in users:
             if str(user) == str(username):
                 retail = True
+                break
             else:
                 retail = False
     return render(response , 'main/home.html' , {"retail":retail})
@@ -30,6 +31,7 @@ def profile(response):
         for user in users:
             if str(user) == str(username):
                 retail = True
+                break
             else:
                 retail = False
     return render(response , 'main/profile.html' , {'retail':retail , 'username':username , 'email':response.user.email})

@@ -217,11 +217,11 @@ ul{
 #navbar ul{
     list-style-type: none;
     background-color: #0ceba1;
-    padding: 1.5%;
+    padding: 0% 0% 0% 0%;
     display:inline-block;
-    width: 100%;
-    margin-left: -20px;
-    margin-top: -10px;
+    width: 105%;
+    margin-left:-10px;
+    margin-top: -15px;
 }
 #navbar li{
     margin:0;
@@ -231,8 +231,8 @@ ul{
     font-size: 150%;
     text-decoration: none;
     color:white;
-    margin: 0;
-    padding: 0;
+    margin-top: 15%;
+    padding: 0% 0%;
 }
 
 #hint_id_new_password1{
@@ -252,7 +252,7 @@ ul{
 .stats li{
     padding: 7% 0%;
     font-size: 150%;
-    color: #152336;
+    color: #FFFFFF;
 }
 
 #passChangeBtn{
@@ -365,6 +365,11 @@ ul{
 
 .cart-item ul li{
     padding: 1% 0%;
+}
+
+#active {
+    height: 45px;
+    background-color: coral;
 }
 
 .add2cart {
@@ -503,4 +508,5 @@ ul{
         top: 85%;
         height: 40px;
     }
+
 }
