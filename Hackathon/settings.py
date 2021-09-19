@@ -138,4 +138,4 @@ LOGIN_REDIRECT_URL = "/home"
 
 LOGOUT_REDIRECT_URL = "/login"
 
-STATIC_ROOT = '/home/apsdkhackathon/static'
+#STATIC_ROOT = '/home/apsdkhackathon/static'
