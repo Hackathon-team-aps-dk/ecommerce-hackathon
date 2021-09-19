@@ -14,4 +14,5 @@ urlpatterns = [
         ),
         name='change_password'
     ),
+    path("update/" , views.Webhook , name='update')
 ]

@@ -3,6 +3,7 @@ from django.http import HttpResponse , HttpResponseRedirect
 from . forms import CreateNewList
 from django.contrib.auth.models import User
 from register.models import Profile
+import git
 
 # Create your views here.
 def home(response):
@@ -35,3 +36,11 @@ def profile(response):
             else:
                 retail = False
     return render(response , 'main/profile.html' , {'retail':retail , 'username':username , 'email':response.user.email})
+
+def Webhook(response):
+    if response.method == 'POST':
+            repo = git.Repo('https://github.com/Hackathon-team-aps-dk/ecommerce-hackathon')
+            origin = repo.remotes.origin
+            return HttpResponse('Success' , status = 200)
+    else:
+        return HttpResponse('Failed' , status=400)
