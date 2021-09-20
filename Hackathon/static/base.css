@@ -354,16 +354,9 @@ ul{
     padding: 1% 0%;
 }
 
-.search-item ul li img{
-    width: 300px;
-    height: auto;
+.productimg{
+    display: none;
 }
-
-.search-item {
-    border:1px solid black !important;
-    width:75% !important;
-    margin:auto !important;
-   }
 
 .cart{
     background-image: none;
@@ -526,9 +519,7 @@ ul{
     }
 
     .productimg{
-            border:1px solid black !important;
-            width:75% !important;
-            margin:auto !important;
+            display: none;
     }
 
 }
