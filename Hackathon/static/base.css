@@ -316,7 +316,7 @@ ul{
 }
 
 .product-image img{
-    max-width: 40%;
+    width: max-content;
     height: auto;
 }
 
@@ -514,9 +514,6 @@ ul{
         height: 40px;
     }
 
-    .product-image img{
-        max-width: 300px;
-        height: auto;
-    }
+
 
 }
