@@ -6,7 +6,7 @@ from . models import Product , Cart
 # Create your views here.
 def create(response):
     if response.method == "POST":
-        form = CreateNewProduct(response.POST)
+        form = CreateNewProduct(response.POST , response.FILES)
         if form.is_valid():
             form.instance.poster = response.user
             form.save()

@@ -368,11 +368,7 @@ ul{
 }
 
 #active {
-<<<<<<< HEAD
     height: 45px;
-=======
-    height: 50px;
->>>>>>> d034b7a02bb7dda27ae0624dedb6f3620fdb89c3
     background-color: coral;
 }
 
