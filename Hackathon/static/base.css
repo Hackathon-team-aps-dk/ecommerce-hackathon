@@ -354,6 +354,11 @@ ul{
     padding: 1% 0%;
 }
 
+.search-item ul li img{
+    width: 300px;
+    height: auto;
+}
+
 .cart{
     background-image: none;
 }
@@ -514,7 +519,7 @@ ul{
         height: 40px;
     }
 
-    #product-image{
+    .search-item ul li img{
         width: 150px;
         height: auto;
     }
