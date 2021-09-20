@@ -138,6 +138,11 @@ ul{
     color: rgb(83, 179, 125);
 }
 
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 #id_Retailer{
     margin-top: 20px;
 }
