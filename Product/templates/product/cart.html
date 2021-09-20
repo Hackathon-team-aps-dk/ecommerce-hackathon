@@ -33,14 +33,19 @@
     </div>
 {% if carts|length >= 1 %}
         <ul>
+            {netCost = 0}
             {% for cart in carts %}
+            {netCost += int(cart.cost)}
             <div class="cart-item">
             <li>
                 {{cart.product}}
                 <br>
-                {{cart.cost}}
+                ₹ {{cart.cost}}
             </li>
             {%endfor%}
+            <li>
+                Net Total: {netCost}
+            </li>
         </ul>
     </div>
 {%else%}
