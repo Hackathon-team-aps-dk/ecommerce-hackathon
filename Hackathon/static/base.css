@@ -315,6 +315,11 @@ ul{
    padding: 8px 2px;
 }
 
+.product-image img{
+    width: 40%;
+    height: auto;
+}
+
 .search-bar{
     border: 2px solid coral;
     height: 50px;

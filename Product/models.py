@@ -7,7 +7,7 @@ class Product(models.Model):
     productName = models.CharField(max_length = 100)
     productDescription = models.CharField(max_length = 550)
     productCost = models.IntegerField()
-    productImage = models.ImageField(upload_to='images' , default = 'default.jpg')
+    productImage = models.ImageField(upload_to='images' , default = 'images/default.jpg')
     poster = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE , null =True)
 
     def __str__(self):
