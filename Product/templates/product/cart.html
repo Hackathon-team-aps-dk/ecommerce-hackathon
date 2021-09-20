@@ -33,9 +33,9 @@
     </div>
 {% if carts|length >= 1 %}
         <ul>
-            {netCost = 0}
+            {(netCost = 0}}
             {% for cart in carts %}
-            {netCost += int(cart.cost)}
+            {{netCost += int(cart.cost)}}
             <div class="cart-item">
             <li>
                 {{cart.product}}
@@ -44,7 +44,8 @@
             </li>
             {%endfor%}
             <li>
-                Net Total: {netCost}
+                <br>
+                Net Total: {{netCost}}
             </li>
         </ul>
     </div>
