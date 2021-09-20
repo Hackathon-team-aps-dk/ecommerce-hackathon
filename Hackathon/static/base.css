@@ -514,8 +514,8 @@ ul{
         height: 40px;
     }
 
-    .product-image{
-        width: 200px;
+    #product-image{
+        width: 150px;
         height: auto;
     }
 
