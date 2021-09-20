@@ -59,7 +59,8 @@
             Product Cost: ₹{{dict.productCost}}
         </li>
         <li>
-            <img id="product-image" src="/media/{{dict.productImage}}" alt="Product Image" style="width:150px;height:auto;">
+            <img id="product-image" src="/media/{{dict.productImage}}" alt="Product Image" style="width:200px;height:auto;">
+            <button onclick="window.href = '/media/{{dict.productImage}}'">View Full Image</button>
         </li>
         <li>
             Sold By: {{dict.poster_id|idToUser}}
