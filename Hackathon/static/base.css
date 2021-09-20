@@ -359,6 +359,12 @@ ul{
     height: auto;
 }
 
+.search-item {
+    border:1px solid black !important;
+    width:75% !important;
+    margin:auto !important;
+   }
+
 .cart{
     background-image: none;
 }
@@ -519,9 +525,10 @@ ul{
         height: 40px;
     }
 
-    .search-item ul li img{
-        width: 150px;
-        height: auto;
+    .productimg{
+            border:1px solid black !important;
+            width:75% !important;
+            margin:auto !important;
     }
 
 }
