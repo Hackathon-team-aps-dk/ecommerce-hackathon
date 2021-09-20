@@ -16,6 +16,7 @@ class Product(models.Model):
 class Cart(models.Model):
     user = models.ForeignKey(User , on_delete=models.CASCADE , related_name='cart' , null = True)
     product = models.CharField(max_length = 100)
+    cost = models.IntegerField()
 
     def __str__(self):
         return self.product

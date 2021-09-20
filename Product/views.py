@@ -62,14 +62,11 @@ def cart(response):
         try:
             search = response.GET.get("mybtn2")
             product = Product.objects.get(id=search)
-            cart = Cart(product=product.productName)
+            cart = Cart(product=product.productName , cost=product.productCost)
             cart.save()
             response.user.cart.add(cart)
         except:
             pass
-
-    carts = list(Cart.objects.all())
     userCarts= list(response.user.cart.all())
-
 
     return render(response , 'product/cart.html' , {"retail":retail , "carts":userCarts} )

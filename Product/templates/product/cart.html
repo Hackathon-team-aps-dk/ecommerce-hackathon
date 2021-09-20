@@ -32,11 +32,13 @@
         </ul>
     </div>
 {% if carts|length >= 1 %}
-    <div class="cart-item">
         <ul>
             {% for cart in carts %}
+            <div class="cart-item">
             <li>
-                {{cart}}
+                {{cart.product}}
+                <br>
+                {{cart.cost}}
             </li>
             {%endfor%}
         </ul>
