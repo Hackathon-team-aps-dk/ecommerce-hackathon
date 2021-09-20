@@ -315,7 +315,7 @@ ul{
    padding: 8px 2px;
 }
 
-.product-image img{
+.product-image{
     max-width: 200px;
     height: auto;
 }
@@ -514,7 +514,7 @@ ul{
         height: 40px;
     }
 
-    .product-image img{
+    .product-image{
         width: 200px;
         height: auto;
     }

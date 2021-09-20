@@ -39,13 +39,6 @@
 <button class="query-btn">🔍</button>
 </form>
 
-{%else%}
-
-<h1>Please Login <a href="/login">Here</a> To Get Access To The Website</h1>
-
-{%endif%}
-
-
 
 {% if products|length >= 1%}
 
@@ -66,7 +59,7 @@
             Product Cost: ₹{{dict.productCost}}
         </li>
         <li class="product-image">
-            <img src="/media/{{dict.productImage}}" alt="Product Image">
+            <img class="product-image" src="/media/{{dict.productImage}}" alt="Product Image">
         </li>
         <li>
             Sold By: {{dict.poster_id|idToUser}}
@@ -85,6 +78,13 @@
 <p>No avaliable products searched</p>
 
 {% endif %}
+
+{%else%}
+
+<h1>Please Login <a href="/login">Here</a> To Get Access To The Website</h1>
+
+{%endif%}
+
 
 <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 </body>
