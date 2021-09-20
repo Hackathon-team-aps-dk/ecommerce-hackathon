@@ -34,8 +34,7 @@
 {% if carts|length >= 1 %}
         <ul>
             {% for cart in carts %}
-            <div class="cart-item">
-            <li>
+            <li class="cart-item">
                 {{cart.product}}
                 <br>
                 ₹ {{cart.cost}}
@@ -46,13 +45,12 @@
                 Net Total: ₹ {{carts|add}}
             </li>
         </ul>
-    </div>
 {%else%}
 <div class="cart-item">
     <p>There are no products in your cart</p>
 </div>
 {% endif %}
-
+<script src="{% static 'darkMode.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 </body>
 </html>

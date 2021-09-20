@@ -41,6 +41,13 @@
     {%endif%}
     <li>Username: {{username}}</li>
     <li>Registered Email: {{email}}</li>
+    <li>
+        <label for="">Dark Mode</label>
+        <label class="switch"> 
+        <input type="checkbox" id='theme-setter'>
+        <span class="slider round"></span>
+      </label>
+    </li>
     <li><Button id="passChangeBtn" onclick="location.href = '/change-password/'">Change Password</Button></li>
 </ul>
 
@@ -50,5 +57,7 @@
 
 {%endif%}
 <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+<script src="{% static 'darkModeSetter.js' %}"></script>
+<script src="{% static 'darkMode.js' %}"></script>
 </body>
 </html>
