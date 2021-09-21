@@ -8,7 +8,7 @@ $(document).ready(function(){
                 $("#msg-area").empty();
                 for (var key in response.messages)
                 {
-                    let textToShow = "<p> " + response.messages[key].sender +  " to "  + response.messages[key].reciever +" : " + response.messages[key].messageText+" </p>"
+                    let textToShow = "<p> " + response.messages[key].sender +  " to "  + response.messages[key].reciever +" : " + response.messages[key].messageText+" </p><br>"
                     console.log(textToShow)
                     $("#msg-area").append(textToShow);
                 }
