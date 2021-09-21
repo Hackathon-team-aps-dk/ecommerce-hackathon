@@ -10,7 +10,6 @@ $(document).on('submit','#text-form',function(e){
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
-         alert(data)
       },
       error: function(data){
           //alert(data)
