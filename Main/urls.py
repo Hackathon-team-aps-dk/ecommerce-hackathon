@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
+from Messages.views import send , getMessages
 
 urlpatterns = [
    path("home/" , views.home , name = 'home'),
@@ -14,5 +15,7 @@ urlpatterns = [
         ),
         name='change_password'
     ),
-    path("update/" , views.Webhook , name='update')
+    path("update/" , views.Webhook , name='update'),
+    path('send', send, name='send'),
+    path('getMessages', getMessages, name='getMessages'),
 ]

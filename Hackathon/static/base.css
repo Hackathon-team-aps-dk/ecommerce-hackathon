@@ -452,6 +452,61 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+#msg-btn{
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#msg-btn img{
+    width: inherit;
+    height: inherit;
+}
+
+#text-chat{
+    position: fixed;
+    right: 5%;
+    bottom: 0%;
+    background-color: white;
+    height: 55%;
+    width: 25%;
+    border-radius: 2px;
+    display: none;
+}
+
+#text-chat input{
+    width: 97.5%;
+}
+
+#text-chat button{
+    border: none;
+    background-color: #0ceba1;
+    color: white;
+    width: 100%;
+    height: 30px;
+}
+
+p{
+    color: black;
+    position: fixed;
+}
+
+#msg-area{
+    height: 90%;
+    width: auto;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+#text-form{
+    position: relative;
+    bottom: 10%;
+}
+
 @media only screen and (max-width: 500px){
     h1{
         text-align: center;

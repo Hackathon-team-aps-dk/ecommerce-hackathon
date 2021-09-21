@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="{% static 'favicon.png' %}"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +39,20 @@
 <input type="text" placeholder=" Search For Products...." class="search-bar" name="search">
 <button class="query-btn">🔍</button>
 </form>
+
+<button id="msg-btn"><img src="/static/msg.png" alt="Message Image"></button>
+
+<div id="text-chat">
+    <div id="msg-area">
+        
+    </div>
+
+    <form action="" id="text-form">
+        <input type="text" placeholder="Send A Message To?" id="reciever-user"> <br>
+        <input type="text" placeholder="Enter Your Message Here" id="text-message-field"> <br>
+        <input type="submit" id="sendMsg" value="Send">Send <br>
+    </form>
+</div>
 
 
 {% if products|length >= 1%}
@@ -88,6 +103,9 @@
 {%endif%}
 
 <script src="{% static 'darkMode.js' %}"></script>
+<script src="{% static 'chatMenu.js' %}"></script>
+<script src="{% static 'requests.js' %}"></script>
+<script src="{% static 'messageRequest.js' %}"></script>
 <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 </body>
 </html>
